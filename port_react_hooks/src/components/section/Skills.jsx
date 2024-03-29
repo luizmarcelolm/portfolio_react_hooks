@@ -40,7 +40,7 @@ function Skills(){
                     para continuar aprimorando minhas habilidades e entregando projetos de alta qualidade.
                 </p>              
             )}
-            <div>
+                    <div>
                         <img src={javascript}/>
                         <img src={html}/>
                         <img src={css}/>
@@ -49,9 +49,12 @@ function Skills(){
                         <img src={net}/>
                         <img src={bootstrap}/>
                    </div>
-            <div className={styles.button} onMouseEnter={InfoOn}>
-                <ButtonA  text='Saber mais'/>
-            </div>
+
+                   {info === false&&(
+                         <div className={styles.button} onClick={InfoOn}>
+                            <ButtonA  text='Saber mais'/>
+                        </div>
+                   )}
         </div>
     )
 }

@@ -1,0 +1,16 @@
+.btn{
+    background-color:#6A5ACD;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 600;
+    width: 530px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.btn:hover{
+    transition-duration: 0.5s;
+    transform: translateY(-7px);
+}

@@ -18,7 +18,6 @@ function Cards({imagem, title, tech, description, repo, site  }){
            <a onMouseEnter={InfoOn} href={site} target="_blank">
                <img src={imagem}/>
            </a> 
-
            {info === true &&(
                 <section>
                 <h3>{title}</h3>
