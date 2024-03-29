@@ -1,0 +1,16 @@
+.divCards{
+    display: flex;
+    justify-content: center;
+}
+
+.projects h2{
+    font-family: Poppins;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 96px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-left: 50px;
+    margin-top: 100px;
+
+}

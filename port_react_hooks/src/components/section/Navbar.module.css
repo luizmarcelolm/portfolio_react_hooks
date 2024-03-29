@@ -1,0 +1,31 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar .ulMenu{
+    width: 100%;
+   justify-content: center;
+}
+
+.navbar li a{
+    margin: 20px;
+    color: #FFFFFF;
+}
+
+.navbar .menu .item{
+    color:#FFFFFF !important;  
+    text-decoration: none;
+    font-size: 30px; 
+    margin: 50px;
+    font-family: 'poppins';
+}
+

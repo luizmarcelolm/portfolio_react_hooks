@@ -1,0 +1,30 @@
+.cards{
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+    border: 1px solid #BCBCBC;
+    ; 
+    padding: 20px;
+    border-radius: 30px 5px 30px 5px;
+    width: 500px;
+    
+}
+
+.cards img{
+    max-width: 500px;
+    border-radius: 20px;
+    padding: 0px;
+}
+
+.cards section{
+    border-radius: 20px;
+    width: auto;
+    margin: 75px;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+section p{
+    text-align: justify;
+}

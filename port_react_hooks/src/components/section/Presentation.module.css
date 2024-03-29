@@ -1,0 +1,19 @@
+.presentation h1{
+    font-family: Poppins;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 96px;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 100px;
+
+}
+
+.presentation p{
+    text-align: justify;
+    width: 75%;
+}
+
+.presentation img{
+    width: 80%;
+}
