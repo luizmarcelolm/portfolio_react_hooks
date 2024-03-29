@@ -1,0 +1,33 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.footer .ulFooter{
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+
+.footer .ulFooterIcon{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+
+.footer li{
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: left;
+
+}
+
+.footer a{
+    color: #FFFFFF;
+    margin: 10px;
+
+}
