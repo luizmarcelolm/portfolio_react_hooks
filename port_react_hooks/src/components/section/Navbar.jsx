@@ -6,9 +6,9 @@ function Navbar(){
     return(
         <div className={styles.navbar}>
             <ul className={styles.ulMenu}>
-                <li className={styles.menu}><Nav.Link className={styles.item} href="">Projetos</Nav.Link></li>
-                <li className={styles.menu}><Nav.Link className={styles.item} href="">Tecnologias</Nav.Link></li>
-                <li className={styles.menu}><Nav.Link className={styles.item} href="">Sobre mim</Nav.Link></li>
+                <li className={styles.menu}><Nav.Link className={styles.item} href="#Projetos">Projetos</Nav.Link></li>
+                <li className={styles.menu}><Nav.Link className={styles.item} href="#Tecnologias">Tecnologias</Nav.Link></li>
+                <li className={styles.menu}><Nav.Link className={styles.item} href="#Sobre_mim">Sobre mim</Nav.Link></li>
             </ul>
             <ul> 
                 <li><a href='https://github.com/luizmarcelolm' target="_blank"><FaGithubSquare size={30}/></a></li>

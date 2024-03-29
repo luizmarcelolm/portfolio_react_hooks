@@ -1,3 +1,7 @@
+.skills{
+ max-width: 1000px;
+}
+
 .skills h1{
     font-family: Poppins;
     font-size: 40px;
@@ -15,13 +19,20 @@
     font-weight: 600;
     line-height: 35px;
     text-align: justify;
-    margin-left: 100px;
+    margin-left: 10%;
     max-width: 800px;
 }
 
 .button{
+    width: 150px;
     text-align: left;
     margin-left: 100px;
     margin-top: 70px;
 
+}
+
+.skills img{
+    height: 70px;
+    margin: 25px;
+    border-radius: 20px;
 }

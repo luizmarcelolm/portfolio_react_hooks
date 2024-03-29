@@ -3,7 +3,7 @@ import imagem from '../../image/imagem2.svg'
 
 function Presentation(){
     return(
-        <div className={styles.presentation}>
+        <div className={styles.presentation} id='Sobre_mim'>
             <h1>Sobre mim</h1>
 
             <img src={imagem}/>
