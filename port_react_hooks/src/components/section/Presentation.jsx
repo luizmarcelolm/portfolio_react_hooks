@@ -32,7 +32,6 @@ function Presentation(){
              setDelta(period);
              setLoop(loop+1);
        }
-
     }
 
 

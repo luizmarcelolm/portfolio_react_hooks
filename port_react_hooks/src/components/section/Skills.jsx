@@ -1,6 +1,5 @@
 import styles from './Skills.module.css'
 import ButtonA from "../elementos/ButtonA"
-import {useState} from 'react'
 import javascript from '../../image/Skills/javascript.svg'
 import css from '../../image/Skills/css.svg'
 import html from '../../image/Skills/html.svg'
@@ -8,11 +7,11 @@ import react from '../../image/Skills/react.svg'
 import csharp from '../../image/Skills/csharp.png'
 import net from '../../image/Skills/net.png'
 import bootstrap from '../../image/Skills/bootstrap.png'
+import { useEffect, useState } from 'react'
 
 function Skills(){
 
     const [info, setInfo] = useState(false)
-
     function InfoOn(){
         setInfo(true)
     }
@@ -20,9 +19,41 @@ function Skills(){
         setInfo(false)
     }
 
+    const [text, setText] = useState('');
+    const toRotate = ['eu sou Luiz Marcelo Mota     ', 'sou desenvolvedor FullStack     '];
+    const [loop, setLoop] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const period = 90;
+    const [delta, setDelta] = useState(100)  
+
+    useEffect(()=>{
+        let ticher = setInterval (()=>{
+            toType()
+        }, delta)
+        return()=>{clearInterval(ticher)}
+    }, [text])
+
+    const toType = () =>{          
+       let i = loop % toRotate.length;
+       let fullText = toRotate[i];
+       let updatedText = isDeleting ? fullText.substring(0, text.length-1) : fullText.substring(0, text.length+1)  
+       setText(updatedText);
+
+       if(!isDeleting && updatedText === fullText){
+           setIsDeleting(true);
+           setDelta(period);
+       }else if(isDeleting && updatedText === '') {
+             setIsDeleting(false);
+             setDelta(period);
+             setLoop(loop+1);
+       }
+    }
+
+   
+
     return(
         <div onMouseLeave={InfoOff} className={styles.skills} id='Tecnologias'>
-           <h1>Principais tecnologias que utilizo</h1>
+           <h1>Olá, {text}</h1>
            <p>Como desenvolvedor front-end, utilizo uma variedade de tecnologias para criar
               interfaces web interativas e responsivas. Os principais recursos que uso
               incluem JavaScript, CSS e HTML para a base do desenvolvimento. Além disso, 
@@ -57,5 +88,5 @@ function Skills(){
                    )}
         </div>
     )
-}
+ }
 export default Skills

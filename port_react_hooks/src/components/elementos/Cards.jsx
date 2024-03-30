@@ -17,10 +17,11 @@ function Cards({imagem, title, tech, description, repo, site  }){
         <div onMouseLeave={InfoOff} className={styles.cards}>
            <a onMouseEnter={InfoOn} href={site} target="_blank">
                <img src={imagem}/>
-           </a> 
+           </a>
+           <h3>{title}</h3> 
+
            {info === true &&(
                 <section>
-                <h3>{title}</h3>
                 <p>{description}</p>
                 <p>{tech}</p>
                 <Button text="Acesse o repositório" link={repo}/>

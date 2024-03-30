@@ -21,6 +21,10 @@
     color: #FFFFFF;
 }
 
+.navbar .menu .item:hover{
+ color: #6A5ACD !important;
+}
+
 .navbar .menu .item{
     color:#FFFFFF !important;  
     text-decoration: none;
