@@ -16,6 +16,7 @@
 }
 
 .presentation .divText h2{
+    font-family: Poppins;
     max-width: 1000px;
 }
 
@@ -32,8 +33,8 @@
 
 .presentation li{
     font-size: 30px;
-    font-weight: 600;
-    color: #FFFFFF; 
+    font-weight: 200px;
+    color:#6A5ACD; 
 }
 
 .presentation .div{
