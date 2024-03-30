@@ -31,3 +31,22 @@
     margin: 10px;
 
 }
+
+@media (min-width:360px) and (max-width:1000px){
+
+    .footer{
+        width: 100%;
+        display: grid;
+     }
+
+    .footer ul li{
+        text-align: center;
+        align-items: center;
+     }
+
+     .footer .ulFooterIcon{
+        text-align: center !important;
+        align-items: center !important;
+        justify-content: center;
+     }
+}

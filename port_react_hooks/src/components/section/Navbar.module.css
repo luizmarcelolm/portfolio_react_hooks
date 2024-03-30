@@ -33,3 +33,21 @@
     font-family: 'poppins';
 }
 
+@media (min-width:900px) and (max-width:1200px){
+    .navbar .menu .item{
+        font-size: 22px; 
+    }
+}
+
+@media (min-width:360px) and (max-width:899px){
+        .navbar{
+            display: grid;
+            justify-content: space-between;
+            padding-left: 0px;
+        }
+    .navbar .menu .item{
+        font-size: 12px;
+    }
+
+}
+

@@ -20,7 +20,7 @@ function Skills(){
     }
 
     const [text, setText] = useState('');
-    const toRotate = ['eu sou Luiz Marcelo Mota     ', 'sou desenvolvedor FullStack     '];
+    const toRotate = ['Eu sou Luiz Marcelo Mota     ', 'Sou desenvolvedor FullStack     '];
     const [loop, setLoop] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const period = 90;
@@ -53,7 +53,7 @@ function Skills(){
 
     return(
         <div onMouseLeave={InfoOff} className={styles.skills} id='Tecnologias'>
-           <h1>Olá, {text}</h1>
+           <h1># {text}</h1>
            <p>Como desenvolvedor front-end, utilizo uma variedade de tecnologias para criar
               interfaces web interativas e responsivas. Os principais recursos que uso
               incluem JavaScript, CSS e HTML para a base do desenvolvimento. Além disso, 
