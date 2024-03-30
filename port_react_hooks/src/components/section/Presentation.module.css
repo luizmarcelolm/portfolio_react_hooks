@@ -6,14 +6,36 @@
     text-align: left;
     margin-left: 50px;
     margin-top: 100px;
-
 }
 
-.presentation p{
-    text-align: justify;
-    width: 75%;
+.presentation .divText{
+    display:grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation .divText h2{
+    max-width: 1000px;
 }
 
 .presentation img{
-    width: 80%;
+    margin-left: 50px;
+    width: 78%;
+}
+
+.presentation ul{
+    display: flex;
+    list-style: none;
+    justify-content:space-around;
+}
+
+.presentation li{
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFFFFF; 
+}
+
+.presentation .div{
+    width: 100%;
 }

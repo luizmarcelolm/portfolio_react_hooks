@@ -1,21 +1,56 @@
 import styles from './Presentation.module.css'
 import imagem from '../../image/imagem2.svg'
+import { useEffect, useState } from 'react' 
 
 function Presentation(){
+
+    const [text, setText] = useState('');
+    const toRotate = ['Em 2013 me formei em Engenharia da Computação e iniciei minha carreira em T.I', 'Em 2014 mudei de cidade e acabei info para o ramo de manutenção em elevadores.', 'Em 2020 iniciei minha jornada em busca de retornar a área de programação, iniciei meus estudos novamente construindo projetos com diversas tecnologias.', 'Em 2024 iniciei curso de Desenvolvedor FullStack na Escola DNC onde estou aprendendo muito e me sinto preparado para o mercado de trabalho. '];
+    const [loop, setLoop] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const period = 80;
+    const [delta, setDelta] = useState(100)  
+
+    useEffect(()=>{
+        let ticher = setInterval (()=>{
+            toType()
+        }, delta)
+        return()=>{clearInterval(ticher)}
+    }, [text])
+
+    const toType = () =>{
+       let i = loop % toRotate.length;
+       let fullText = toRotate[i];
+       let updatedText = isDeleting ? fullText.substring(0, text.length-1) : fullText.substring(0, text.length+1)  
+
+       setText(updatedText);
+
+       if(!isDeleting && updatedText === fullText){
+           setIsDeleting(true);
+           setDelta(period);
+       }else if(isDeleting && updatedText === ''){
+             setIsDeleting(false);
+             setDelta(period);
+             setLoop(loop+1);
+       }
+    }
+
+
     return(
         <div className={styles.presentation} id='Sobre_mim'>
             <h1>Sobre mim</h1>
-
+            <div className={styles.div}>
+                <ul>
+                    <li>2013</li>
+                    <li>2014</li>
+                    <li>2020</li>
+                    <li>2024</li>
+                </ul>
+            </div>
             <img src={imagem}/>
-
-            <p>Durante os últimos três anos, tive a oportunidade de trabalhar como desenvolvedor em uma empresa de tecnologia. Durante esse período, pude aprimorar minhas habilidades em linguagens de programação como Java, Python e JavaScript, bem como em frameworks como Spring e React.
-
-Ao longo desses anos, participei de projetos desafiadores que me permitiram aprender e crescer profissionalmente. Trabalhei em equipes multidisciplinares, colaborando com designers, analistas de negócios e outros desenvolvedores para criar soluções inovadoras e de alta qualidade.
-
-Além disso, tive a oportunidade de liderar projetos e mentorear desenvolvedores mais juniores, ajudando a compartilhar meu conhecimento e experiência com a equipe.
-
-Essa experiência de três anos no desenvolvimento me deu uma base sólida para enfrentar novos desafios e me tornou um profissional mais confiante e habilidoso. Estou animado para continuar crescendo e evoluindo nessa área tão dinâmica e empolgante.</p>
-               
+            <div className={styles.divText}>
+                  <h2>" {text} "</h2> 
+            </div>         
         </div>
     )
 }
