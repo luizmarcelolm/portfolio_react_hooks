@@ -39,15 +39,27 @@
     }
 }
 
-@media (min-width:360px) and (max-width:899px){
+@media (min-width:600px) and (max-width:899px){
+    .navbar .menu .item{
+        font-size: 15px; 
+    }
+    .navbar{
+        display: grid;
+        justify-content: space-between;
+        padding-left: 0px;
+    }
+    
+}
+
+@media (min-width:500px) and (max-width:599px){
         .navbar{
             display: grid;
             justify-content: space-between;
             padding-left: 0px;
         }
     .navbar .menu .item{
-        font-size: 12px;
+        font-size: 10px;
     }
-
 }
+
 
