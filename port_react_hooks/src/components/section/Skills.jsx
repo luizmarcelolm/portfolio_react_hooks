@@ -53,7 +53,7 @@ function Skills(){
 
     return(
         <div onMouseLeave={InfoOff} className={styles.skills} id='Tecnologias'>
-           <h1>Olá, eu {text}</h1>
+           <h1>Olá, eu sou {text}</h1>
            <p>Como desenvolvedor front-end, utilizo uma variedade de tecnologias para criar
               interfaces web interativas e responsivas. Os principais recursos que uso
               incluem JavaScript, CSS e HTML para a base do desenvolvimento. Além disso, 
