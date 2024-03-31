@@ -14,3 +14,31 @@
     transition-duration: 0.5s;
     transform: translateY(-7px);
 }
+
+@media (min-width:500px) and (max-width:599px){
+    .btn{
+        background-color:#6A5ACD;
+        padding: 10px 30px 10px 30px;
+        border-radius: 20px;
+        color: #FFFFFF;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 600;
+        width: 450px;
+        border-radius: 20px 20px 20px 20px;
+    }
+}
+
+@media (min-width:360px) and (max-width:499px){
+    .btn{
+        background-color:#6A5ACD;
+        padding: 5px 30px 5px 30px;
+        border-radius: 20px;
+        color: #FFFFFF;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 600;
+        width: 280px;
+        border-radius: 20px 20px 20px 20px;
+    }
+}

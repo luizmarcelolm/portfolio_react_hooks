@@ -24,7 +24,7 @@
 }
 
 .button{
-    width: 150px;
+    width: 180px;
     text-align: left;
     margin-left: 100px;
     margin-top: 70px;
@@ -42,7 +42,7 @@
     border: 5px solid aliceblue;  
 }
 
-@media (min-width:900px) and (max-width:1200px){
+@media (min-width:1000px) and (max-width:1200px){
     .skills h1{
         font-family: Poppins;
         font-size: 36px;
@@ -56,29 +56,119 @@
     }
 }
 
-@media (min-width:360px) and (max-width:899px){
+@media (min-width:900px) and (max-width:999px){    
+    .skills p{
+        font-size: 20px;
+        max-width: 700px;
+    } 
+
+    .skills img{
+        height: 70px;
+        margin: 15px;
+        border-radius: 20px;
+    }
+}
+
+@media (min-width:800px) and (max-width:899px){    
     .skills h1{
         font-family: Poppins;
         font-size: 30px;
-        font-weight: 400px;
+        font-weight: 500;
     }
-    
     .skills p{
-        font-family: Poppins;
-        font-size: 16px;
-        font-weight: 400px;
-        max-width: 500px;
-    }
+        font-size: 18px;
+        max-width: 600px;
+    } 
 
     .skills img{
-        height: 41px;
-        margin: 14px;
+        height: 50px;
+        margin: 15px;
         border-radius: 20px;
     }
-
     .skills img:hover{
-        height: 36px;
+        height: 50px;
         border: 3px solid aliceblue;  
     }
- 
+}
+
+@media (min-width:700px) and (max-width:799px){    
+    .skills p{
+        font-size: 16px;
+        max-width: 550px;
+    } 
+    .skills img{
+        height: 50px;
+        margin: 15px;
+        border-radius: 20px;
+    }
+    .skills img:hover{
+        height: 50px;
+        border: 3px solid aliceblue;  
+    }
+}
+
+@media (min-width:600px) and (max-width:699px){   
+    .skills h1{
+        font-family: Poppins;
+        font-size: 28px;
+        font-weight: 500px;
+    } 
+    .skills p{
+        font-size: 14px;
+        max-width: 500px;
+    } 
+    .skills img{
+        height: 40px;
+        margin: 15px;
+        border-radius: 20px;
+    }
+    .skills img:hover{
+        height: 40px;
+        border: 3px solid aliceblue;  
+    }
+}
+
+@media (min-width:500px) and (max-width:599px){   
+    .skills h1{
+        font-family: Poppins;
+        font-size: 22px;
+        font-weight: 500px;
+    } 
+    .skills p{
+        font-size: 12px;
+        max-width: 400px;
+        line-height: 20px;
+    } 
+    .skills img{
+        height: 35px;
+        margin: 10px;
+        border-radius: 20px;
+    }
+    .skills img:hover{
+        height: 35px;
+        border: 2px solid aliceblue;  
+    }
+}
+
+@media (min-width:360px) and (max-width:499px){   
+    .skills h1{
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500px;
+        margin-top: 10px;
+    } 
+    .skills p{
+        font-size: 10px;
+        max-width: 400px;
+        line-height: 20px;
+    } 
+    .skills img{
+        height: 30px;
+        margin: 10px;
+        border-radius: 20px;
+    }
+    .skills img:hover{
+        height: 30px;
+        border: 2px solid aliceblue;  
+    }
 }

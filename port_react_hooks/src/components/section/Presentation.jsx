@@ -48,7 +48,7 @@ function Presentation(){
             </div>
             <img src={imagem}/>
             <div className={styles.divText}>
-                  <h2>" {text} "</h2> 
+                  <p>" {text} "</p> 
             </div>         
         </div>
     )

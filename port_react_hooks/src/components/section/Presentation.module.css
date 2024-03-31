@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.presentation .divText h2{
+.presentation .divText p{
     font-family: Poppins;
     max-width: 1000px;
 }
@@ -39,4 +39,29 @@
 
 .presentation .div{
     width: 100%;
+}
+
+@media (min-width:360px) and (max-width:499px){
+    .presentation h1{
+        font-family: Poppins;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 96px;
+        text-align: left;
+        margin-left: 50px;
+        margin-top: 100px;
+    }
+    .presentation li{
+        font-size: 20px;
+        font-weight: 200px;
+        color:#6A5ACD; 
+    }
+    .presentation .divText p{
+        font-family: Poppins;
+        font-size: 12px;
+        max-width: 400px;
+    }
+
+
+
 }

@@ -20,7 +20,7 @@ function Skills(){
     }
 
     const [text, setText] = useState('');
-    const toRotate = ['Luiz Marcelo Mota     ', 'desenvolvedor FullStack     '];
+    const toRotate = ['Luiz Marcelo Mota     ', 'Dev FullStack     '];
     const [loop, setLoop] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const period = 90;
